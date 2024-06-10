@@ -4,6 +4,7 @@ let dragItemPlace = document.querySelector(".downPlace")
 let checkBTN = document.querySelector(".checkBTN")
 let resetbtn =document.querySelector(".reset")
 let generateBtn =document.querySelector(".reGenerate")
+// let btnsoundEffect = document.querySelector("audio")
 
 let items =[]
 
