@@ -1,0 +1,107 @@
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 150px 100px 200px;
+    justify-items: center;
+    background-color: rgb(221, 221, 221);
+    column-gap: 100px;
+}
+
+ .false{
+justify-self: end;
+    }
+.true{
+justify-self: start;
+}
+.dragItemContainer{
+    justify-self: end;
+display: flex;
+row-gap: 20px;
+padding-top: 20px;
+align-items: center;
+height: 480px;
+flex-direction: column;
+background-image: linear-gradient(45deg,aqua ,rgb(14, 105, 105) 80%);
+box-shadow: 0px 0px 10px 5px gray;
+width: 250px;
+border-radius: 20px;
+}
+
+.drg{
+    box-sizing: border-box;
+    list-style: none;
+    width: 100px;
+    padding-top: 20px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+   background-color: #63dfa0;
+    font-size: 50px;
+    color:#252525;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid rgb(1, 130, 139);
+    }
+
+    .downPlace{
+        justify-self: start;
+        display: flex;
+        row-gap: 20px;
+        padding-top: 20px;
+        align-items: center;
+        height: 480px;
+        flex-direction: column;
+        background-image: linear-gradient(45deg ,rgb(14, 105, 105)  ,aqua 80%);
+        width: 250px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 5px gray;
+        }
+
+
+.checkBTN{    text-transform: capitalize;
+grid-column: 1 / 3;
+ width: 200px;
+ height: 50px;
+align-self: end;
+cursor: pointer;
+background-color: #63dfa0;
+font-size: large;
+ border-radius: 10px;
+border: 0;
+ transition: transform 0.2s ease;
+}
+
+.checkBTN:hover{
+     border: 2px solid coral;
+
+}
+
+.checkBTN:active{
+    transform: scale(0.9);
+}
+
+.reset{
+    
+    text-transform: capitalize;
+    grid-column: 1 / 3;
+    width: 200px;
+    height: 50px;
+    background-color: #63dfa0;
+   align-self: center;
+   cursor: pointer;
+   font-size: large;
+    border-radius: 10px;
+   border: 0;
+    transition: transform 0.2s ease;}
+    .reset:hover{
+        border: 2px solid coral;
+    
+    }
+
+    .reset:active{
+        transform: scale(0.9);
+    }
+.reGenerate{
+    align-self: start;
+}
