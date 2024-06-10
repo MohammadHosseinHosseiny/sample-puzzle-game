@@ -1,10 +1,19 @@
-
+:root{
+    --backgroundcolor:rgb(221 221 221);
+    --itemcolor: green;
+    --itemCONcolor:blue;
+    --itembordercolor:yellow;
+    --downBoxcolor:red;
+    --itemTextcolor:darkorange;
+    --boxShadowcolor:gray;
+    --buttonColors:#63dfa0;
+}
 body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr 150px 100px 200px;
     justify-items: center;
-    background-color: rgb(221, 221, 221);
+    background-color: var(--backgroundcolor);
     column-gap: 100px;
 }
 
@@ -22,8 +31,8 @@ padding-top: 20px;
 align-items: center;
 height: 480px;
 flex-direction: column;
-background-image: linear-gradient(45deg,aqua ,rgb(14, 105, 105) 80%);
-box-shadow: 0px 0px 10px 5px gray;
+background-image: var(--itemCONcolor);
+box-shadow: 0px 0px 10px 5px var(--boxShadowcolor);
 width: 250px;
 border-radius: 20px;
 }
@@ -36,12 +45,12 @@ border-radius: 20px;
     height: 100px;
     text-align: center;
     vertical-align: middle;
-   background-color: #63dfa0;
+   background-color: var(--itemcolor);
     font-size: 50px;
-    color:#252525;
+    color:var(--itemTextcolor);
     border-radius: 20px;
     cursor: pointer;
-    border: 3px solid rgb(1, 130, 139);
+    border: 3px solid var(--itembordercolor);
     }
 
     .downPlace{
@@ -52,10 +61,10 @@ border-radius: 20px;
         align-items: center;
         height: 480px;
         flex-direction: column;
-        background-image: linear-gradient(45deg ,rgb(14, 105, 105)  ,aqua 80%);
+        background-image: var(--downBoxcolor);
         width: 250px;
         border-radius: 20px;
-        box-shadow: 0px 0px 10px 5px gray;
+        box-shadow: 0px 0px 10px 5px var(--boxShadowcolor);
         }
 
 
@@ -65,7 +74,7 @@ grid-column: 1 / 3;
  height: 50px;
 align-self: end;
 cursor: pointer;
-background-color: #63dfa0;
+background-color: var(--buttonColors) ;
 font-size: large;
  border-radius: 10px;
 border: 0;
@@ -87,7 +96,7 @@ border: 0;
     grid-column: 1 / 3;
     width: 200px;
     height: 50px;
-    background-color: #63dfa0;
+    background-color: var(--buttonColors) ;
    align-self: center;
    cursor: pointer;
    font-size: large;
