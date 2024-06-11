@@ -16,24 +16,33 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 320px;
-    grid-template-rows: 48px 48px 1fr  ;
+    grid-template-rows: 1fr 1fr  ;
     justify-items: center;
     align-items: center;
-
     background-color: var(--backgroundcolor);
     row-gap: 32px;
+
 }
 header{
     grid-column: 1/4;
+    border: #17273d solid 5px;
+    text-align: center;
+    
+}
+header video{
+    width: 1000px;
+    height: 400px;
+}
+header h1{
+    text-transform: capitalize;
+    color: snow;
 }
 
  .false{
 color: black;
 grid-column: 1/4;
     }
-.true{
 
-}
 /* .dragItemContainer{
     
 display: flex;
