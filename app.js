@@ -80,33 +80,18 @@ function generateNewItem(){
    let li = document.createElement("li")
    li.classList.add("drg")
    li.draggable="true"
-   li.innerHTML= compare()
-   setTimeout(()=>{
+   li.innerHTML= Math.floor(Math.random()*99)
+
     li.id= li.innerHTML
    li.addEventListener("dragstart",event=>{
        event.dataTransfer.setData("itemId",event.target.id)
    })
    items.push(li)
    dragItemContainer.append(li)
-   },10)
-   
+
     }
 
 }
-
-function compare(){
-   let randomNmber= Math.floor(Math.random()*99)
-   let cpompareRes=items.some(item=>{
- return Number(item.innerHTML) == randomNmber
-   })
-
-   if(cpompareRes){
-   let a=  compare()
-   setTimeout(()=>{ return a},5)
-  
-   }else return randomNmber
-}
-
 
 undoBtn.addEventListener("click",undo)
 function undo(){
